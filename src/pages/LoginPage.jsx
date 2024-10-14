@@ -2,9 +2,14 @@ import React, {useEffect, useState} from 'react'
 import { useAuth } from '../utils/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
 import '../index.css'
+import conf from '../conf/conf.js'
 
 
 const LoginPage = () => {
+    console.log(conf.appwriteUrl)
+    console.log(conf.appwriteProjectId)
+    console.log(conf.appwriteDatabaseId)
+    console.log(conf.appwriteCollectionId)
     const {user, handleUserLogin} = useAuth()
     const navigate = useNavigate()
 
