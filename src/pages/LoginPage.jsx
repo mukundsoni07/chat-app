@@ -6,10 +6,6 @@ import conf from '../conf/conf.js'
 
 
 const LoginPage = () => {
-    console.log(conf.appwriteUrl)
-    console.log(conf.appwriteProjectId)
-    console.log(conf.appwriteDatabaseId)
-    console.log(conf.appwriteCollectionId)
     const {user, handleUserLogin} = useAuth()
     const navigate = useNavigate()
 
